@@ -1,0 +1,52 @@
+selector{}
+body{
+    width: 700px;
+    height: 300px;
+    background-color: #12312311;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+p{
+    text-indent: -2em; /*首行缩进*/
+    padding-left: 2em;
+    font-family: sans-serif;
+    color: aquamarine;
+    font-size: 30px;
+    text-decoration:blink;
+}
+li strong{
+    font-style: italic;
+}
+#myRed{color: red}
+[title]{
+    color: blueviolet;
+}
+input[type = "test"]{
+    width: 300px;
+    height: 700px;
+    background-color: #222222;
+    text-decoration-color: yellow;
+    color: white;
+}
+p.normal{
+    font-style: normal;
+}
+p.xie1{
+    font-style: oblique;
+}
+p.xie2{
+    font-style: italic;
+}
+a:link{
+    color: yellow;
+}
+a:visited{
+    color: brown;
+}
+a:hover{
+    color: darkorange;
+}
+a:active{
+    color: blue;
+}

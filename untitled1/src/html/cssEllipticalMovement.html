@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:-webkit-animation="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>椭圆运动</title>
+    <style>
+        DIV {
+            -webkit-animation:
+                animX 2s linear  infinite alternate,
+                animY 2s linear  infinite alternate
+        }
+        @-webkit-keyframes animX{
+            0% {left: 0;}
+            100% {left: 500px;}
+        }
+        @-webkit-keyframes animY{
+            0% {top: 0;}
+            100% {top: 300px;}
+        }
+    </style>
+</head>
+<body>
+
+<div class="box" style="width: 500px;height: 500px;background: yellow">
+    <div class="ball" style="width: 10px;height: 10px;background: #111111"></div>
+</div>
+</body>
+</html>

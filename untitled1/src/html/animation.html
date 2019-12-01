@@ -1,0 +1,182 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8" />-->
+<!--    <title> css3圆形轨迹动画 </title>-->
+<!--&lt;!&ndash;    <style type="text/css">&ndash;&gt;-->
+<!--&lt;!&ndash;        @keyframes animX{&ndash;&gt;-->
+<!--&lt;!&ndash;            0% {left: 0px;}&ndash;&gt;-->
+<!--&lt;!&ndash;            100% {left: 500px;}&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+<!--&lt;!&ndash;        @keyframes animY{&ndash;&gt;-->
+<!--&lt;!&ndash;            0% {top: 0px;}&ndash;&gt;-->
+<!--&lt;!&ndash;            100% {top: 500px;}&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+
+<!--&lt;!&ndash;        #ball {&ndash;&gt;-->
+<!--&lt;!&ndash;            width: 20px;&ndash;&gt;-->
+<!--&lt;!&ndash;            height: 20px;&ndash;&gt;-->
+<!--&lt;!&ndash;            background-color: #f66;&ndash;&gt;-->
+<!--&lt;!&ndash;            border-radius: 50%;&ndash;&gt;-->
+<!--&lt;!&ndash;            position: absolute;&ndash;&gt;-->
+<!--            animation: animX 4s cubic-bezier(0.36,0,0.64,1) -2s infinite alternate, animY 4s cubic-bezier(0.36,0,0.64,1)  0s infinite alternate;-->
+<!--        }-->
+
+<!--&lt;!&ndash;        #lopp {&ndash;&gt;-->
+<!--&lt;!&ndash;            width: 498px;&ndash;&gt;-->
+<!--&lt;!&ndash;            height: 498px;&ndash;&gt;-->
+<!--&lt;!&ndash;            border: 2px solid #999;&ndash;&gt;-->
+<!--&lt;!&ndash;            border-radius: 50%;&ndash;&gt;-->
+<!--&lt;!&ndash;            position: absolute;&ndash;&gt;-->
+<!--&lt;!&ndash;            left: 9px;&ndash;&gt;-->
+<!--&lt;!&ndash;            top: 9px;&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </style>&ndash;&gt;-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="lopp"></div>-->
+<!--<div id="ball"></div>-->
+<!--</body>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <style type="text/css" media="screen">
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            height: 100px;
+            width: 100px;
+            background: #f00;
+            border-radius: 50%;
+            position: relative;
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+<div id="box" style="top: 500px;left: 100px"></div>
+
+</body>
+<script>
+    /**
+     * x^2/width + y^2/height = 1
+     * y^2 = (1-x^2/width)*height
+     * 每个运动片段传入x的坐标，用来计算y的值
+     * @type {HTMLElement}
+     */
+    var box = document.getElementById('box');
+    var width = 400;
+    var height = 400;
+    var xSpeed = 1;
+    var xOffSet = 100;
+    var yOffSet = 100;
+    setInterval(function () {
+        // var x = parseInt(box.style.left) + xSpeed;
+        //给动画设置边界
+        // if (x > 800) xSpeed *= -1;
+        // else if (x < 0) xSpeed *= -1;
+        // box.style.left=x+'px';
+        // box.style.top=x+'px';
+        move(parseInt(box.style.left) - xOffSet, parseInt(box.style.top) );
+    }, 1000 / 60);
+
+    function move(x, y) {
+        console.debug("y=======" + y);
+        console.debug("x=======" + x);
+        if (y <= 0) {
+            x -= xSpeed;
+        } else if (y>0) {
+            x += xSpeed;
+        }
+        var setX = x + xOffSet;
+        box.style.left = setX + 'px';
+        var YY = (1 - x * x / width) * height;
+        if (YY > 0) {
+            y = Math.sqrt(YY);
+        }
+        if (YY <= 0) {
+            y = Math.sqrt(YY * -1) * -1;
+        }
+        box.style.top = y + 'px';
+    }
+</script>
+</html>
+
+
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!--<head>-->
+<!--    <style type="text/css">-->
+<!--        #div1 {-->
+<!--            margin:100px auto;-->
+<!--            width:5px;-->
+<!--            height:5px;-->
+<!--            background:green;-->
+<!--            position:relative;-->
+<!--        }-->
+<!--        #box {-->
+<!--            width:50px;-->
+<!--            height:50px;-->
+<!--            background:#f00;-->
+<!--            position:absolute;-->
+<!--            left:0;-->
+<!--            top:0;-->
+<!--        }-->
+<!--    </style>-->
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
+<!--    <title>JS写的椭圆轨迹移动的代码</title>-->
+<!--    <script type="text/javascript">-->
+<!--        window.onload=function() {//运动轨迹随便写的一个(x/300)2+(y/100)2=1椭圆方程-->
+<!--            var oDiv=document.getElementById('box');-->
+<!--            var oTxt=document.getElementById('txt');-->
+<!--            var m=-500;-->
+<!--            var n=500;-->
+<!--            var y=0;-->
+<!--            var x=0;-->
+<!--            function move() {-->
+<!--                if(m<=500) {-->
+<!--                    x=m;-->
+<!--                    b();-->
+<!--                }-->
+<!--                else {-->
+<!--                    x=n;-->
+<!--                    a();-->
+<!--                    if(x<-500) {-->
+<!--                        clearInterval(timer);-->
+<!--                        m=-300;-->
+<!--                        n=300;-->
+<!--                        timer=setInterval(move,1000/60);-->
+<!--                    }-->
+<!--                }-->
+<!--                oDiv.style.left=x+'px';-->
+<!--                oDiv.style.top=parseInt(y)+'px';-->
+<!--                oTxt.value="top="+oDiv.style.top+'\n'+"left="+oDiv.style.left+'\n'+"X="+x+'\n'+"M="+m+'\n'+"N="+n;  }-->
+<!--            function  a(){-->
+<!--                n-=1;-->
+<!--                y=Math.sqrt(1-Math.pow(n/500,2))*300;-->
+<!--            }-->
+<!--            function  b(){-->
+<!--                m+=1;-->
+<!--                y=Math.sqrt(1-Math.pow(m/500,2))*-300;-->
+<!--            }-->
+<!--            move();-->
+<!--            var timer=setInterval(move,1000/60);-->
+<!--        }-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<textarea id="txt" style="width:150px;height:100px;"></textarea>-->
+<!--<div id="div1">-->
+<!--    <div id="box"></div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->

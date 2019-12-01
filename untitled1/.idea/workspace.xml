@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2a14d4d4-41a9-42d1-a8b9-7f8179de4ced" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CoffeeScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PdVhKpXTfttp86JTdjvcLJKAjO" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/html" />
+      <recent name="$PROJECT_DIR$/src/img" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.drawOval.html">
+    <configuration name="animation.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/untitled1/src/html/animation.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="cssEllipticalMovement.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/untitled1/src/html/cssEllipticalMovement.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="cssTest.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/untitled1/src/html/cssTest.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="drawOval.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/untitled1/src/html/drawOval.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" uri="http://localhost:63342/untitled1/src/test.html">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.drawOval.html" />
+        <item itemvalue="JavaScript Debug.cssTest.html" />
+        <item itemvalue="JavaScript Debug.cssEllipticalMovement.html" />
+        <item itemvalue="JavaScript Debug.animation.html" />
+        <item itemvalue="JavaScript Debug.test.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a14d4d4-41a9-42d1-a8b9-7f8179de4ced" name="Default" comment="" />
+      <created>1493708319264</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1493708319264</updated>
+      <workItem from="1493708321467" duration="225000" />
+      <workItem from="1496933426534" duration="3455000" />
+      <workItem from="1503329418848" duration="3000" />
+      <workItem from="1523525059206" duration="609000" />
+      <workItem from="1535012333732" duration="27000" />
+      <workItem from="1535378434872" duration="11445000" />
+      <workItem from="1546052223331" duration="63000" />
+      <workItem from="1553235007719" duration="162000" />
+      <workItem from="1554977005852" duration="139000" />
+      <workItem from="1566199236563" duration="311000" />
+      <workItem from="1566199660780" duration="124000" />
+      <workItem from="1566204148766" duration="13000" />
+      <workItem from="1568081245627" duration="29137000" />
+      <workItem from="1568173693969" duration="2884000" />
+      <workItem from="1568389766146" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/html/animation.html</url>
+          <line>93</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/html/drawOval.html</url>
+          <line>206</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/html/drawOval.html</url>
+          <line>135</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/html/drawOval.html</url>
+          <line>153</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/html/drawOval.html</url>
+          <line>97</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
